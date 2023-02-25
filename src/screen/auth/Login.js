@@ -27,7 +27,7 @@ const Login = () => {
         auth()
             .signInWithEmailAndPassword(email, password)
             .then(() => {
-                console.log('user login successfully 1')
+                console.log('user login successfully')
                 navigation.navigate('Back')
             })
             .catch(error => alert(error.massage))
